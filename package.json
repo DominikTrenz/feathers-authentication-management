@@ -40,8 +40,7 @@
     "changelog": "github_changelog_generator -u feathers-plus -p feathers-authentication-management && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
     "lint": "semistandard src/**/*.js --fix",
     "mocha": "mocha --opts mocha.opts",
-    "coverage": "nyc npm run mocha",
-    "test": "npm run lint && npm run coverage"
+    "coverage": "nyc npm run mocha"
   },
   "semistandard": {
     "env": [
@@ -49,8 +48,7 @@
     ]
   },
   "dependencies": {
-    "@feathersjs/authentication": "^4.3.0",
-    "@feathersjs/authentication-local": "^4.3.0",
+    "@feathersjs/authentication-local": "^1.1.0",
     "@feathersjs/errors": "^4.3.0",
     "bcryptjs": "^2.3.0",
     "debug": "^4.1.0",
